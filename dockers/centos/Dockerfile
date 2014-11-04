@@ -9,7 +9,7 @@ RUN yum -y install python-pip; yum clean all
 
 ADD .. /repo
 
-RUN cd /repo; pip install -r requirements.txt
+RUN cd /repo; pip install -r guest-requirements.txt
 
 EXPOSE 3306 8080
 

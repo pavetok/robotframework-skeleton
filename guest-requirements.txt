@@ -1,0 +1,3 @@
+sqlalchemy
+robotframework
+robotframework-selenium2library
