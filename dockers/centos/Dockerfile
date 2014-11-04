@@ -7,7 +7,7 @@ RUN yum -y install git; yum clean all
 RUN yum -y install mysql-server mysql; yum clean all
 RUN yum -y install python-pip; yum clean all
 
-ADD .. /repo
+ADD . /repo
 
 RUN cd /repo; pip install -r guest-requirements.txt
 
