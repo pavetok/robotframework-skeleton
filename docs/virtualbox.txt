@@ -1,0 +1,3 @@
+При запуске на windows:
+- запустить virtualbox от имени администратора
+- разрешить создавать симлинки в общей папке http://www.ahtik.com/blog/fixing-your-virtualbox-shared-folder-symlink-error/
