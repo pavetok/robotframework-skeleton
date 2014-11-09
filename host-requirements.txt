@@ -1,4 +1,3 @@
 robotframework
-ansible
 fabric
 fig
