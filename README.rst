@@ -12,5 +12,5 @@ Usage
     virtualenv venv  # optional
     source venv/bin/activate  # optional
     pip install -U -r host-requirements.txt
-    cp stands/{stand_name} .
+    cp stands/{stand_name}/* .
     fig up
