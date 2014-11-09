@@ -5,9 +5,9 @@ RUN yum -y install \
     python-pip \
     && yum clean all
 
-COPY . /reqs
-WORKDIR /reqs
+COPY . /build
+WORKDIR /build
 
-RUN pip install -r guest-requirements.txt
+RUN pip install -r requirements/guest-reqs.txt
 
 # your code here
