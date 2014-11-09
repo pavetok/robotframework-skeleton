@@ -7,10 +7,10 @@ RUN yum -y install \
     python-pip \
     && yum clean all
 
-#COPY . /repo
+COPY . /repo
 
-#WORKDIR /repo
+WORKDIR /repo
 
-#RUN pip install -r guest-requirements.txt
+RUN pip install -r guest-requirements.txt
 
 #CMD ["/bin/sh", "-c", "while true; do echo hello world; sleep 1; done"]

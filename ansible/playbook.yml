@@ -5,7 +5,9 @@
   tasks:
   - name: build tomcat stand
     docker_image:
-        path="../stands/tomcat"
+        #nocache=true
+        #path="../stands/tomcat"
+        path=".."
         name="tomcat_app"
         state=build
   - name: run tomcat stand
@@ -13,7 +15,7 @@
         image=tomcat_app
         name={{item}}
         ports=8080:8080
-        volumes={{ansible_env.HOME}}/Host/robotframework-skeleton:/repo
+        #volumes={{ansible_env.HOME}}/Host/robotframework-skeleton:/repo
     with_sequence:
         start=1
         end=1
