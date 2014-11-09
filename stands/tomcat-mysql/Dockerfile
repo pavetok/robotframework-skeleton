@@ -1,5 +1,4 @@
 FROM malderhout/tomcat
-MAINTAINER Pavel Vetokhin
 
 RUN yum -y install epel-release
 RUN yum -y install \
