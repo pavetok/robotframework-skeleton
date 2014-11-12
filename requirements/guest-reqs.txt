@@ -1,3 +1,4 @@
 sqlalchemy
 robotframework
+robotframework-sshlibrary
 robotframework-selenium2library

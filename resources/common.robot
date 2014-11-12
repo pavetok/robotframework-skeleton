@@ -1,6 +1,8 @@
 *** Settings ***
+Library     String
 Library     Collections
 
+Library     SSHLibrary
 Library     Selenium2Library
 
 Library     externals/user.py
