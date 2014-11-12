@@ -5,3 +5,6 @@ from __future__ import unicode_literals
 class database(object):
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
+
+    def keyword(self):
+        pass
