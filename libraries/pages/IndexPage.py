@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from bases import base_user
+from bases import BasePage
 
 
-class user(base_user):
+class IndexPage(BasePage):
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
 

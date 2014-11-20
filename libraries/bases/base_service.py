@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from bases import base_library
+
+from bases import BaseLibrary
 
 
-class base_service(base_library):
+class BaseService(BaseLibrary):
     pass

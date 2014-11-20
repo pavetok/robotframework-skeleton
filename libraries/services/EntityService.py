@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from bases import base_service
+from bases import BaseService
 
 
-class entity_service(base_service):
+class EntityService(BaseService):
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
 

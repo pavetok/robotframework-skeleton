@@ -7,7 +7,7 @@ Documentation   Suite documentation
 *** Test Cases ***
 Test nothing
     Keywords.My keyword
-    Log  Test nothing
+    RegisteredUser.login
 
 
 *** Keywords ***

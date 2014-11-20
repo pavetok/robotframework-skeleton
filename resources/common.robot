@@ -5,10 +5,9 @@ Library     Collections
 Library     SSHLibrary
 Library     Selenium2Library
 
-Library     externals/user.py
-Library     internals/database.py
-Library     services/entity_service.py
-Library     pages/index_page.py
+Library     RegisteredUser
+Library     EntityService
+Library     IndexPage
 
 Resource    keywords.robot
 

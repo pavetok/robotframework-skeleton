@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from base_library import BaseLibrary
 
-class base_user(object):
+
+class BaseUser(BaseLibrary):
     pass
