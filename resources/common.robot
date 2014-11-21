@@ -1,14 +1,19 @@
 *** Settings ***
+# builtin
 Library     String
 Library     Collections
-
+# external
 Library     SSHLibrary
 Library     Selenium2Library
 
+# actors
+Library     RegisteredUser
+# subsystems
 Library     Database
 Library     RestApi
-Library     RegisteredUser
+# services
 Library     EntityService
+# pages
 Library     IndexPage
 
 Resource    fixtures.robot

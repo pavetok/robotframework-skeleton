@@ -4,8 +4,9 @@ from robot.run import run_cli
 from variables import HOST_ROBOT_DIR, BASE_ROBOT_ARGS, ROOT_SUITE_NAME
 
 
-def run_robot(test="*", suite=None):
+def run_robot(test="*", suite=None, tags="*"):
     run_cli(BASE_ROBOT_ARGS + [
+        "--include", "{0}".format(tags),
         "--test", "{0}".format(test),
         "--suite", "{0}".format(suite if suite else ROOT_SUITE_NAME),
         "{0}/tests".format(HOST_ROBOT_DIR)

@@ -17,6 +17,11 @@ def suite(name):
 
 
 @task
+def tags(*tags):
+    run_robot(tags="AND".join(tags))
+
+
+@task
 def all():
     run_robot()
 
@@ -26,9 +31,10 @@ def failed():
     pass
 
 
-def run_robot(test="*", suite=ROOT_SUITE_NAME):
+def run_robot(test="*", suite=ROOT_SUITE_NAME, tags="*"):
     local("pybot " + " ".join(
         BASE_ROBOT_ARGS + [
+            "--include", "{0}".format(tags),
             "--test", "'{0}'".format(test),
             "--suite", "'{0}'".format(suite),
             "{0}/tests".format(HOST_ROBOT_DIR)

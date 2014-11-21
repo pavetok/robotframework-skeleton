@@ -5,7 +5,8 @@ Documentation   Suite documentation
 
 
 *** Test Cases ***
-Test nothing
+Integration test
+    [Tags]  integration
     Keywords.My keyword
     RegisteredUser.login
 
