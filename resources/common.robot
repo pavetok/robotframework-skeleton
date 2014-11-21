@@ -9,6 +9,7 @@ Library     RegisteredUser
 Library     EntityService
 Library     IndexPage
 
+Resource    fixtures.robot
 Resource    keywords.robot
 
 Variables   variables.py
