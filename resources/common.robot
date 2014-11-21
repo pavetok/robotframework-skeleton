@@ -5,6 +5,8 @@ Library     Collections
 Library     SSHLibrary
 Library     Selenium2Library
 
+Library     Database
+Library     RestApi
 Library     RegisteredUser
 Library     EntityService
 Library     IndexPage

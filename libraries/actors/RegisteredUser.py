@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from bases import BaseUser
+from bases import BaseActor
 
 
-class RegisteredUser(BaseUser):
+class RegisteredUser(BaseActor):
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
 
