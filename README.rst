@@ -20,6 +20,6 @@ Usage
     $ virtualenv venv27  # optional
     $ source venv27/bin/activate  # optional
     (venv27)$ pip install -U -r requirements/host-reqs.txt
-    (venv27)$ cp stands/{desired_stand_name}/* .
+    (venv27)$ cp -p stands/{desired_stand_name}/* .
     (venv27)$ rm -r stands
     (venv27)$ fig up
