@@ -2,6 +2,7 @@
 # builtin
 Library     String
 Library     Collections
+Library     OperatingSystem
 # external
 Library     SSHLibrary
 Library     Selenium2Library
@@ -16,6 +17,7 @@ Library     EntityService
 # pages
 Library     IndexPage
 
+Resource    admin.robot
 Resource    fixtures.robot
 Resource    keywords.robot
 
@@ -24,10 +26,10 @@ Variables   variables.py
 
 *** Keywords ***
 Setup global
-    Log  Setup global
+    Admin.Create connections
 
 Teardown global
-    Log  Teardown global
+    SSHLibrary.Close All Connections
 
 Setup suite
     Log  Setup suite

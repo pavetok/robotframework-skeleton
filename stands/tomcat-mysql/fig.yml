@@ -3,6 +3,7 @@ app:
     volumes:
         - .:/repo
     ports:
+        - "2211:22"
         - "8080:8080"
     links:
         - mysql

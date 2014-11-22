@@ -1,3 +1,8 @@
-Удалить "пустые" образы:
+Остановить все контейнеры:
+docker stop $(docker ps -aq --filter "status=running")
+
+Удалить все "остановенные" контейнеры:
+docker rm $(docker ps -aq --filter "status=exited")
+
+Удалить все "пустые" образы:
 docker rmi $(docker images -q --filter "dangling=true")
-docker rmi $(docker images -a | grep "^<none>" | awk '{print $3}')
