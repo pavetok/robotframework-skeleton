@@ -9,24 +9,26 @@ Library     Selenium2Library
 
 # actors
 Library     RegisteredUser
-# subsystems
+# components
 Library     Database
 Library     RestApi
+Library     AppLog
 # services
 Library     EntityService
 # pages
 Library     IndexPage
 
-Resource    admin.robot
 Resource    fixtures.robot
 Resource    keywords.robot
+Resource    admin.robot
+Resource    docker.robot
 
 Variables   variables.py
 
 
 *** Keywords ***
 Setup global
-    Admin.Create connections
+    Admin.Create fail directory
 
 Teardown global
     SSHLibrary.Close All Connections
@@ -38,7 +40,9 @@ Teardown suite
     Log  Teardown suite
 
 Setup test
-    Log  Setup test
+    Admin.Remember log lines count
 
 Teardown test
-    Log  Teardown test
+    Run Keyword If Test Failed  Run Keywords
+    ...	Admin.Create test directory
+    ...	Admin.Save log chunk

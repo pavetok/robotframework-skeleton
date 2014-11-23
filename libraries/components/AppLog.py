@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from bases import BaseSubsystem
+from bases import BaseComponent
 
 
-class RestApi(BaseSubsystem):
+class AppLog(BaseComponent):
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
 

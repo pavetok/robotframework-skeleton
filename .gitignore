@@ -1,4 +1,5 @@
 .idea
 .codeintel
 venv*
+fails
 output

@@ -6,7 +6,6 @@ from fabric.api import task, local
 
 @task
 def deploy(stand_name):
-    local("/bin/cp ~/.ssh/id_rsa.pub .")
     local("/bin/cp -p stands/{0}/* .".format(stand_name))
     # local("fig build")
     local("fig up")

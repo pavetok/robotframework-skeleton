@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from bases import BaseSubsystem
+from bases import BaseComponent
 
 
-class Database(BaseSubsystem):
+class Database(BaseComponent):
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
 
