@@ -1,0 +1,3 @@
+[submodule "stands"]
+	path = stands
+	url = https://github.com/pavetok/stands.git
